@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/raque/AndroidStudioProjects/EmptyActivity/app/src/main/res/layout/activity_contatos.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/raque/AndroidStudioProjects/EmptyActivity/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/raque/AndroidStudioProjects/EmptyActivity/app/src/main/res/layout/contact_view.xml" value="0.203125" />
       </map>
     </option>
   </component>

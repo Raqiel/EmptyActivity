@@ -7,10 +7,21 @@ import android.provider.CalendarContract
 import android.provider.CalendarContract.Events.*
 import android.widget.Button
 
+
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
+        //abrir nova activity pagina
+        val button:Button = findViewById(R.id.set_contacts)
+        button.setOnClickListener {
+            openNextActivity()
+
+        }
 
 
         //ação do botao
@@ -18,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         btnSetEvent.setOnClickListener {
 
             //cria um evento pre estabelecido no calendario, do horario de agora- até 1 hora mais tarde
+            //esse evento no calendario nao precisa de permissão no manifest
             val intent = Intent(Intent.ACTION_INSERT)
                 .setData(CONTENT_URI)
                 .putExtra(TITLE, "Bootcamp")
@@ -27,5 +39,10 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+    }
+
+    private fun openNextActivity(){
+        val intent = Intent(this, Contatos::class.java)
+        startActivity(intent)
     }
 }
