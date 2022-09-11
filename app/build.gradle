@@ -1,6 +1,10 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
+
+    //id necessario para achar os ids do xml
+
+    id 'kotlin-android-extensions'
 }
 
 android {

@@ -17,11 +17,18 @@ class MainActivity : AppCompatActivity() {
 
 
         //abrir nova activity pagina
-        val button:Button = findViewById(R.id.set_contacts)
+        val button: Button = findViewById(R.id.set_contacts)
         button.setOnClickListener {
-            openNextActivity()
-
+            openContactsActivity()
         }
+        //abrir pagina images
+
+        val button2: Button = findViewById(R.id.set_images)
+            button2.setOnClickListener {
+                openImagesActivity()
+            }
+
+
 
 
         //ação do botao
@@ -41,8 +48,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun openNextActivity(){
+    private fun openContactsActivity(){
         val intent = Intent(this, Contatos::class.java)
+        startActivity(intent)
+    }
+
+
+    private fun openImagesActivity(){
+        val intent = Intent(this, Images::class.java)
         startActivity(intent)
     }
 }
