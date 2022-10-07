@@ -8,9 +8,17 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_camera.*
 import kotlinx.android.synthetic.main.activity_images.*
+import kotlinx.android.synthetic.main.activity_images.image_view
 
 class Images : AppCompatActivity() {
+
+    companion object{
+        private val PERMISSION_CODE = 1000
+        private val IMAGE_PICK_CODE = 1001
+
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_images)
@@ -79,9 +87,5 @@ class Images : AppCompatActivity() {
         }
     }
 
-    companion object{
-        private val PERMISSION_CODE = 1000
-        private val IMAGE_PICK_CODE = 1001
 
-    }
 }

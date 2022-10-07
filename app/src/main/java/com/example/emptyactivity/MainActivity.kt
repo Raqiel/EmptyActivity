@@ -22,11 +22,16 @@ class MainActivity : AppCompatActivity() {
             openContactsActivity()
         }
         //abrir pagina images
-
         val button2: Button = findViewById(R.id.set_images)
             button2.setOnClickListener {
                 openImagesActivity()
             }
+
+        //abrir pagina tirar foto
+        val button3: Button = findViewById(R.id.set_camera)
+        button3.setOnClickListener {
+            openCameraActivity()
+        }
 
 
 
@@ -58,4 +63,12 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, Images::class.java)
         startActivity(intent)
     }
+
+
+    private fun openCameraActivity(){
+        val intent = Intent(this, Camera::class.java)
+        startActivity(intent)
+    }
+
+
 }
