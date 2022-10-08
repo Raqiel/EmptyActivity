@@ -1,11 +1,11 @@
 package com.example.emptyactivity
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.CalendarContract
 import android.provider.CalendarContract.Events.*
 import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
 
 
 
@@ -33,6 +33,12 @@ class MainActivity : AppCompatActivity() {
             openCameraActivity()
         }
 
+        //abrir pagina mapas
+        val button4: Button = findViewById(R.id.set_maps)
+        button4.setOnClickListener {
+            openMapsActivity()
+        }
+
 
 
 
@@ -51,6 +57,11 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
         }
+    }
+
+    private fun openMapsActivity() {
+        val intent = Intent (this, MapsActivity :: class.java)
+        startActivity(intent)
     }
 
     private fun openContactsActivity(){

@@ -2,4 +2,5 @@
     <string name="app_name">EmptyActivity</string>
     <string name="selected_image">Imagem a ser Selecionada Pelo Usuario</string>
     <string name="image_selected">Selecione uma imagem</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

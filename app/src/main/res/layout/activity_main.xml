@@ -45,6 +45,17 @@
 
         />
 
+
+    <Button
+        android:id="@+id/set_maps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Page Maps"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+
+        />
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_view"
         android:layout_width="match_parent"
